@@ -66,6 +66,16 @@ body {
 .header {
   box-shadow: 0 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.05);
 }
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+.header .nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+}
 
 .header-top {
   background-color: var(--color-primary);
@@ -100,17 +110,6 @@ body {
   display: flex;
   align-items: center;
   gap: 4rem;
-}
-
-.header .nav {
-  display: flex;
-  align-items: center;
-}
-.header .nav-links {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 3rem;
 }
 
 .menu-button {
@@ -176,6 +175,7 @@ body {
   color: #0a66c2;
   font-size: 1.6rem;
 }
+
 .header-buttons {
   display: flex;
   gap: 2rem;

@@ -33,12 +33,15 @@ body {
 .m-b-s {
   margin-bottom: 2rem !important;
 }
+
 .m-b-m {
   margin-bottom: 3rem !important;
 }
+
 .m-b-l {
   margin-bottom: 4rem !important;
 }
+
 .m-b-xl {
   margin-bottom: 6rem !important;
 }
@@ -46,12 +49,15 @@ body {
 .m-t-s {
   margin-top: 2rem !important;
 }
+
 .m-t-m {
   margin-top: 3rem !important;
 }
+
 .m-t-l {
   margin-top: 4rem !important;
 }
+
 .m-t-xl {
   margin-top: 6rem !important;
 }
@@ -59,13 +65,24 @@ body {
 /* HEADER SECTION */
 .header {
   box-shadow: 0 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.05);
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+  }
 }
 
 .header-top {
   background-color: var(--color-primary);
   height: 3rem;
   color: #fff;
-
   display: flex;
   align-items: center;
 
@@ -99,20 +116,6 @@ body {
   gap: 4rem;
 }
 
-.header {
-  .nav {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 3rem;
-  }
-}
-
 .menu-button {
   display: none;
 }
@@ -131,20 +134,19 @@ body {
     bottom: -2rem;
     left: 0.2rem;
     background-color: var(--color-secondary);
-
     position: absolute;
   }
 }
 
 /* HERO SECTION */
 .section-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/hero-entre.jpg");
   min-height: calc(100vh - 9rem);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   padding: 4rem 0;
   display: flex;
   flex-direction: column;
@@ -153,6 +155,7 @@ body {
 
 .hero-container {
   padding: 0 11rem;
+
   p {
     color: var(--color-grey-1);
     font-size: 2.4rem;
@@ -177,14 +180,11 @@ body {
   .fa-location-dot {
     margin-right: 0.5rem;
   }
+
   a:link,
   a:visited {
     color: #0a66c2;
     font-size: 1.6rem;
-  }
-
-  a:hover,
-  a:active {
   }
 }
 
@@ -210,11 +210,11 @@ body {
       filter: brightness(0.7);
     }
   }
+
   &-secondary {
     background-color: transparent;
     border: solid 2px #fff;
     color: #fff;
-
     transition: all 0.2s;
 
     &:hover {
