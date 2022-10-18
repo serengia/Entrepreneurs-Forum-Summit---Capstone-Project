@@ -1,0 +1,46 @@
+.hero-container {
+  padding: 0 11rem;
+
+  p {
+    color: $color-grey-1;
+    font-size: 2.4rem;
+  }
+}
+
+.event-details {
+  border-radius: 0.5rem;
+  align-self: flex-start;
+
+  p {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-secondary;
+    font-weight: 600;
+
+    sup {
+      font-size: 1.2rem;
+    }
+  }
+
+  .fa-location-dot {
+    margin-right: 0.5rem;
+  }
+
+  a:link,
+  a:visited {
+    color: #0a66c2;
+    font-size: 1.6rem;
+  }
+}
+
+.header-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1200px) {
+  .hero-container {
+    padding: 0 0;
+  }
+}

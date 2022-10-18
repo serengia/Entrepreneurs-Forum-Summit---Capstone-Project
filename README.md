@@ -1,12 +1,12 @@
 # Capstone project: Entrepreneurs Forum Summit landing page
 
-This project is done using HTML, CSS and Javascript. The project is also set up with html-css and javascript linters.
+This project is done using HTML, SCSS and Javascript. The project is also set up with html-css and javascript linters.
 
 ## Built With
 
-- Html and CSS
+- Html and SASS
 - Javascript
-- Linters (Html, css and Javascript linters)
+- Linters (Html, scss and Javascript linters)
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ Then manually fix the highlighted errors is any.
 > To execute style linters, run the command bellow:
 
 ```
-npx stylelint "**/*.{css,scss}"
+npx stylelint "**/*.scss"
 ```
 
 Then manually fix the highlighted errors is any.
@@ -37,14 +37,14 @@ Then manually fix the highlighted errors is any.
 To auto fix stylelint errors that are fixable automatically, run
 
 ```
-npx stylelint "**/*.{css,scss}" --fix
+npx stylelint "**/*.scss" --fix
 ```
 
 You can [ learn more here>>](https://stylelint.io/user-guide/usage/cli/#autofixing-errors)
 
 ## Live Demo
 
-[Live Demo Link](https://serengia.github.io/Portfolio-setup-and-mobile-first/)
+[Live Demo Link](https://serengia.github.io/Entrepreneurs-Forum-Summit---Capstone-Project/)
 
 ## Authors
 
