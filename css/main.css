@@ -45,6 +45,25 @@ body {
   font-size: 1.8rem;
 }
 
+.heading-secondary {
+  color: #272a31;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
+.heading-secondary::before {
+  content: "";
+  height: 2px;
+  width: 4rem;
+  background-color: #ec5242;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (max-width: 1200px) {
   .heading-primary {
     font-size: 4.2rem;
@@ -100,17 +119,66 @@ body {
 
 /* HEADER SECTION */
 .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
   box-shadow: 0 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.05);
+  z-index: 999;
 }
 .header .nav {
   display: flex;
   align-items: center;
+}
+.header .header-top-container {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.header .header-top-container a:link,
+.header .header-top-container a:visited {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s;
+}
+.header .header-top-container a:hover,
+.header .header-top-container a:active {
+  color: #ec5242;
 }
 .header .nav-links {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 3rem;
+}
+.header .nav-links-item a:link,
+.header .nav-links-item a:visited {
+  text-decoration: none;
+  color: #272a31;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+.header .nav-links-item a:hover,
+.header .nav-links-item a:active {
+  color: #ec5242;
+}
+.header .nav-links-item.btn {
+  padding: 0;
+}
+.header .nav-links-item.btn a:link,
+.header .nav-links-item.btn a:visited {
+  color: #ec5242;
+  border: solid 2px #ec5242;
+  padding: 0.4rem 1.2rem;
+}
+.header .nav-links-item.btn a:hover,
+.header .nav-links-item.btn a:active {
+  filter: brightness(0.7);
+}
+.header .logo {
+  height: 4.5rem;
 }
 
 .header-top {
@@ -125,7 +193,7 @@ body {
   font-size: 1.4rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .header-top .user-links {
   display: flex;
@@ -140,12 +208,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-top-container {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
 }
 
 .menu-button {
@@ -206,25 +268,6 @@ body {
     padding: 0 0;
   }
 }
-.programs-header h2 {
-  color: #272a31;
-  position: relative;
-  text-align: center;
-  font-weight: 600;
-  font-size: 3.2rem;
-  margin-bottom: 4rem;
-}
-.programs-header h2::before {
-  content: "";
-  height: 2px;
-  width: 4rem;
-  background-color: #ec5242;
-  position: absolute;
-  bottom: -0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .programs-body {
   display: flex;
   gap: 1rem;
@@ -246,12 +289,12 @@ body {
 .programs-body .program h3 {
   margin: 2rem 0 0.5rem 0;
   color: #ec5242;
-  text-transform: uppercase;
   line-height: 1.2;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .programs-body .program p {
   color: #fff;
+  font-size: 1.6rem;
 }
 
 .programs-footer {
@@ -263,6 +306,61 @@ body {
   text-transform: uppercase;
 }
 
+.featured-speakers-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  gap: 4rem;
+  padding: 3rem;
+}
+.featured-speakers-body .speaker {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+.featured-speakers-body .speaker::before {
+  content: "";
+  height: 8rem;
+  width: 8rem;
+  top: -2rem;
+  left: -2.5rem;
+  background-image: url("../img/Dotted griduser-pattern.svg");
+  background-size: contain;
+  position: absolute;
+}
+.featured-speakers-body .speaker-img {
+  display: block;
+  max-width: 16rem;
+  z-index: 200;
+}
+.featured-speakers-body .speaker-details .name {
+  font-weight: 600;
+}
+.featured-speakers-body .speaker-details .title {
+  color: #ec5242;
+  font-size: 1.6rem;
+  font-style: italic;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.featured-speakers-body .speaker-details .title::before {
+  content: "";
+  height: 2px;
+  width: 5rem;
+  background-color: #bfbfbf;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+}
+.featured-speakers-body .speaker-details .description {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 576px) {
+  .featured-speakers-body {
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  }
+}
 .btn {
   cursor: pointer;
   padding: 1rem 2.4rem;
@@ -299,6 +397,7 @@ body {
   transition: all 0.2s;
   color: #272a31;
   font-size: 1.6rem;
+  font-weight: 600;
   display: inline-block;
 }
 .link:hover, .link:active {
@@ -317,7 +416,7 @@ body {
 }
 /* HERO SECTION */
 .section-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero-entre.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/hero-entre.jpg");
   min-height: calc(100vh - 9rem);
   background-size: cover;
   background-repeat: no-repeat;
@@ -332,9 +431,34 @@ body {
   background-color: #f7f7f7;
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   min-height: 40rem;
-  padding: 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.section-featured-speakers {
+  padding: 4rem 0;
 }
 
 body {
   color: #272a31;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*
+// BREAK POINTS - Adopted from Boostrap : https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1400px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1200px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 992px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) { ... }
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 576px) { ... }
+
+*//*# sourceMappingURL=main.css.map */
