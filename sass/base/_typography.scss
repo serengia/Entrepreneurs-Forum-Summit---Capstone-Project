@@ -22,7 +22,14 @@
 }
 
 .heading-secondary {
-  color: $color-primary;
+  &-dark {
+    color: $color-primary;
+  }
+
+  &-white {
+    color: #fff;
+  }
+
   position: relative;
   text-align: center;
   font-weight: 600;

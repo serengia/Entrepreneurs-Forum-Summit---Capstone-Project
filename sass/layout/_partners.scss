@@ -1,0 +1,17 @@
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  img {
+    height: 4rem;
+    filter: grayscale(1);
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}

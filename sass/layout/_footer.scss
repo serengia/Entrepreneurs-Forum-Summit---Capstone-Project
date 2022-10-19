@@ -1,0 +1,30 @@
+.footer-content {
+  display: flex;
+  gap: 4rem;
+
+  img {
+    height: 4.5rem;
+  }
+
+  .copyright-content {
+    .copyright {
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 576px) {
+  .footer-content {
+    img {
+      height: 3.5rem;
+    }
+  }
+}

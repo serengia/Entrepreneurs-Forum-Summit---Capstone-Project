@@ -19,6 +19,13 @@ body {
 }
 
 .row {
-  width: 90% !important;
+  width: 85% !important;
   margin: 0 auto !important;
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) {
+  .row {
+    width: 90% !important;
+  }
 }
