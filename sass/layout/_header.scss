@@ -1,6 +1,11 @@
 /* HEADER SECTION */
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
   box-shadow: 0 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.05);
+  z-index: 999;
 
   .nav {
     display: flex;
@@ -12,6 +17,41 @@
     align-items: center;
     list-style: none;
     gap: 3rem;
+
+    &-item {
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: $color-primary;
+        font-size: 1.6rem;
+        transition: all 0.2s;
+        font-weight: 600;
+      }
+
+      a:hover,
+      a:active {
+        color: $color-secondary;
+      }
+    }
+
+    &-item.btn {
+      padding: 0;
+      a:link,
+      a:visited {
+        color: $color-secondary;
+        border: solid 2px $color-secondary;
+        padding: 0.4rem 1.2rem;
+      }
+
+      a:hover,
+      a:active {
+        filter: brightness(0.7);
+      }
+    }
+  }
+
+  .logo {
+    height: 4.5rem;
   }
 }
 
@@ -27,7 +67,7 @@
     font-size: 1.4rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .user-links {
@@ -49,7 +89,18 @@
 .header-top-container {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 6rem;
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s;
+  }
+  a:hover,
+  a:active {
+    color: $color-secondary;
+  }
 }
 
 .menu-button {

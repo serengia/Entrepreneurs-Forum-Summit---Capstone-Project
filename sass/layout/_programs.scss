@@ -1,25 +1,3 @@
-.programs-header {
-  h2 {
-    color: $color-primary;
-    position: relative;
-    text-align: center;
-    font-weight: 600;
-    font-size: 3.2rem;
-    margin-bottom: 4rem;
-
-    &::before {
-      content: "";
-      height: 2px;
-      width: 4rem;
-      background-color: $color-secondary;
-      position: absolute;
-      bottom: -0.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-}
-
 .programs-body {
   display: flex;
   gap: 1rem;
