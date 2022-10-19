@@ -1,0 +1,64 @@
+.programs-header {
+  h2 {
+    color: $color-primary;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+
+    &::before {
+      content: "";
+      height: 2px;
+      width: 4rem;
+      background-color: $color-secondary;
+      position: absolute;
+      bottom: -0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.programs-body {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .program {
+    background-color: rgba($color-primary, 0.85);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+    flex: 1 1 20rem;
+
+    .icon {
+      font-size: 6rem;
+      color: #fff;
+    }
+
+    h3 {
+      margin: 2rem 0 0.5rem 0;
+      color: $color-secondary;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.programs-footer {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+  .link {
+    text-transform: uppercase;
+  }
+}
