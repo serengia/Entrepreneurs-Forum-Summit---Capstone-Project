@@ -12,6 +12,24 @@
     align-items: center;
   }
 
+  .header-top-container {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.2s;
+    }
+
+    a:hover,
+    a:active {
+      color: $color-secondary;
+    }
+  }
+
   .nav-links {
     display: flex;
     align-items: center;
@@ -36,6 +54,7 @@
 
     &-item.btn {
       padding: 0;
+
       a:link,
       a:visited {
         color: $color-secondary;
@@ -84,23 +103,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-top-container {
-  display: flex;
-  align-items: center;
-  gap: 6rem;
-
-  a:link,
-  a:visited {
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.2s;
-  }
-  a:hover,
-  a:active {
-    color: $color-secondary;
-  }
 }
 
 .menu-button {
