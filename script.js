@@ -95,7 +95,7 @@ const injectSpeakers = () => {
     allSpeakers += generateSpeakersMarkup(obj);
   });
 
-  speakersContainer.insertAdjacentHTML("afterbegin", allSpeakers);
+  speakersContainer?.insertAdjacentHTML("afterbegin", allSpeakers);
 };
 
 injectSpeakers();
