@@ -1,3 +1,18 @@
-body {
-  color: $color-primary;
+.about-hero {
+  padding: 6rem 0;
+  background-image: url("../img/main_big.png");
+  background-size: cover;
+  min-height: 90vh;
+}
+
+// Mission section
+
+.about-mission {
+  padding: 6rem 0;
+}
+
+// Past events section
+.section-past-events {
+  padding: 6rem 0;
+  border-top: solid 2px #ddd;
 }

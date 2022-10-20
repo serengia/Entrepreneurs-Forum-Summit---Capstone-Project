@@ -48,6 +48,34 @@
   }
 }
 
+.heading-large {
+  font-size: 6rem;
+  font-weight: 600;
+  color: $color-secondary;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 1.5px;
+    width: 4rem;
+    background-color: $color-secondary;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// General Global styles
+p {
+  margin-bottom: 1.5rem;
+}
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1200px) {
   .heading-primary {

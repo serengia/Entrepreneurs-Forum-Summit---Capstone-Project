@@ -74,6 +74,32 @@ body {
   transform: translateX(-50%);
 }
 
+.heading-large {
+  font-size: 6rem;
+  font-weight: 600;
+  color: #ec5242;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1;
+  position: relative;
+}
+.heading-large::before {
+  content: "";
+  height: 1.5px;
+  width: 4rem;
+  background-color: #ec5242;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 1200px) {
   .heading-primary {
     font-size: 4.2rem;
@@ -387,6 +413,108 @@ body {
   filter: grayscale(0);
 }
 
+.about-hero-container .description {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6rem;
+  background-color: #fff;
+  padding: 3rem;
+  border: solid 1px #ddd;
+}
+.about-hero-container .email-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-hero-container .email-container .email-lead {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+}
+.about-hero-container .email-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.about-hero-container .email-container a i {
+  font-size: 1.4rem;
+  margin-bottom: -0.4rem;
+}
+.about-hero-container .email-container a:link,
+.about-hero-container .email-container a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #272a31;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.about-hero-container .email-container a:hover,
+.about-hero-container .email-container a:active {
+  color: #ec5242;
+}
+
+.mission-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.mission-container .logo {
+  height: 8rem;
+  border: solid 1px #ddd;
+  padding: 2rem;
+  box-sizing: content-box;
+  margin-top: 2rem;
+}
+
+.past-events-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.past-events-container .past-events {
+  display: flex;
+  gap: 3rem;
+}
+.past-events-container .past-events .image-container {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+.past-events-container .past-events .image-container img {
+  width: 100%;
+  transition: all 0.3s;
+  z-index: 7;
+}
+.past-events-container .past-events .image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 82, 66, 0.6);
+  z-index: 10;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.past-events-container .past-events .image-container .overlay h3 {
+  font-size: 3rem;
+}
+.past-events-container .past-events .image-container .overlay:hover ~ img {
+  transform: scale(1.08);
+}
+
+.footer {
+  padding: 4rem 0;
+}
+.footer-dark {
+  background-color: #272a31;
+  color: #fff;
+}
+
 .footer-content {
   display: flex;
   gap: 4rem;
@@ -492,12 +620,20 @@ body {
   background-color: #272a31;
 }
 
-.footer {
-  padding: 4rem 0;
+.about-hero {
+  padding: 6rem 0;
+  background-image: url("../img/main_big.png");
+  background-size: cover;
+  min-height: 90vh;
 }
 
-body {
-  color: #272a31;
+.about-mission {
+  padding: 6rem 0;
+}
+
+.section-past-events {
+  padding: 6rem 0;
+  border-top: solid 2px #ddd;
 }
 
 /*
