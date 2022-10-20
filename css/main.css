@@ -515,7 +515,10 @@ p {
 .mission-container {
   width: 70%;
   margin: 0 auto;
-  text-align: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .mission-container .logo {
   height: 8rem;
@@ -532,6 +535,7 @@ p {
 }
 .past-events-container .past-events {
   display: flex;
+  justify-content: center;
   gap: 3rem;
 }
 .past-events-container .past-events .image-container {
