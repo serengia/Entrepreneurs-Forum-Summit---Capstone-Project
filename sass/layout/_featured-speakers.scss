@@ -60,5 +60,11 @@
 @media (max-width: 576px) {
   .featured-speakers-body {
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+
+    .speaker {
+      &-img {
+        max-width: 10rem;
+      }
+    }
   }
 }

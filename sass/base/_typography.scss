@@ -96,9 +96,20 @@ p {
   }
 }
 
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) {
+  .heading-large {
+    font-size: 4rem;
+  }
+}
+
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 576px) {
   .heading-primary {
+    font-size: 2.4rem;
+  }
+
+  .heading-large {
     font-size: 2.4rem;
   }
 }
