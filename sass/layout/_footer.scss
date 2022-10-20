@@ -1,3 +1,13 @@
+// Footer
+.footer {
+  padding: 4rem 0;
+
+  &-dark {
+    background-color: $color-primary;
+    color: #fff;
+  }
+}
+
 .footer-content {
   display: flex;
   gap: 4rem;
