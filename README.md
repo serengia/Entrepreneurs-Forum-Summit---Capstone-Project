@@ -1,5 +1,7 @@
 # Capstone project: Entrepreneurs Forum Summit landing page
 
+![entrepeneurs-summit](https://user-images.githubusercontent.com/69452516/214476839-bb953dff-8f46-41a8-868b-ee863cfe4f86.png)
+
 This project is done using HTML, SCSS and Javascript. The project is also set up with html-css and javascript linters.
 
 ## Built With
