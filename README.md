@@ -46,7 +46,7 @@ You can [ learn more here>>](https://stylelint.io/user-guide/usage/cli/#autofixi
 
 ## Live Demo
 
-[Live Demo Link](https://serengia.github.io/Entrepreneurs-Forum-Summit---Capstone-Project/)
+[Live Demo Link](https://serecode-entrepreneurs-summit-nextjs.vercel.app/)
 
 ## Authors
 
